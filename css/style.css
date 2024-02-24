@@ -89,10 +89,6 @@ html {
           box-sizing: border-box;
 }
 
-html.modal-open {
-  overflow: hidden;
-}
-
 *,
 *::before,
 *::after {

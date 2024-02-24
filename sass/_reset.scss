@@ -2,9 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-html.modal-open {
-  overflow: hidden;
-}
+// html.modal-open {
+//   overflow: hidden;
+// }
 
 *,
 *::before,
@@ -17,7 +17,6 @@ body {
   color: $light-black;
   font-size: 14px;
   line-height: 1.4;
-  // overflow-x: hidden
   min-width: 320px;
 }
 
