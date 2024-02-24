@@ -647,7 +647,12 @@ button {
 }
 @media (min-width: 0px) {
   .frame2__grid {
-    padding: 14px;
+    padding: 13px;
+  }
+}
+@media (min-width: 480px) {
+  .frame2__grid {
+    padding: 15px;
   }
 }
 .frame2__grid:nth-of-type(1) {

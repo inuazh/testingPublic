@@ -125,7 +125,11 @@
 
     &__grid {
       @include initialMin {
-        padding: 14px;
+        padding: 13px;
+      }
+
+      @include transformation{
+        padding: 15px;
       }
       &:nth-of-type(1) {
         grid-column: 2 span;
