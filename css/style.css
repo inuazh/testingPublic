@@ -311,7 +311,6 @@ button {
 @media (min-width: 480px) {
   .frame-row .frame__grid:nth-of-type(1) .frame__description {
     margin-top: 0;
-    letter-spacing: -0.1px;
   }
 }
 @media (min-width: 0px) {
@@ -647,7 +646,7 @@ button {
 }
 @media (min-width: 0px) {
   .frame2__grid {
-    padding: 13px;
+    padding: 12px;
   }
 }
 @media (min-width: 480px) {
