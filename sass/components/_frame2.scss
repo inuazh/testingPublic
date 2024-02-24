@@ -1,0 +1,188 @@
+.frame2 {
+
+  &-row {
+    display: none;
+    @include transformation {
+      display: grid;
+      grid-column: 3 span;
+      grid-row: 1 / 2;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(102px, 241px);
+      grid-gap: 10px;
+    }
+    .frame2__grid:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    .frame2__grid:nth-of-type(2) {
+      position: relative;
+      grid-column: 1;
+      grid-row: 2;
+      
+      color: $white;
+      cursor: pointer;
+      background-image: url("../img/TimetoWash.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 10;
+      .sub-title {
+        position: relative;
+        z-index: 90;
+        margin-top: 5px;
+        // letter-spacing: 0.5px;
+      }
+
+      &::before {
+        content: "!";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        background-image: url("../img/TimetoWash.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 15;
+        filter: blur(5px);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      &::after {
+        opacity: 1;
+        content: "!";
+        position: absolute;
+        border-radius: 50%;
+        background-color: $white;
+        top: 50%;
+        left: 50%;
+        width: 61px;
+        height: 61px;
+
+        @include roboto-regular;
+        color: #ff3333;
+        font-size: 36px;
+        line-height: 65px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      &:hover {
+        &::before,
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+    .frame2__grid:nth-of-type(3) {
+      grid-column: 2 span;
+      grid-row: 1 / 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      padding: 10.15%;
+      padding-top: 11%;
+      .frame2__list {
+        width: 100%;
+      }
+      .frame2__list-item {
+        font-size: 14px;
+        align-items: center;
+        line-height: 1.4;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7.5px;
+        &:not(:last-of-type) {
+          margin-bottom: 7.5px;
+        }
+
+        strong {
+          display: inline-block;
+          @include opensans-bold;
+          background-color: $light-green;
+          z-index: 10;
+        }
+        span {
+          display: inline-block;
+          @include opensans-regular;
+          background-color: $light-green;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+
+.frame2{
+    padding-bottom: 10px;
+
+    &__grid {
+      @include initialMin {
+        padding: 14px;
+      }
+      &:nth-of-type(1) {
+        grid-column: 2 span;
+        grid-row: 1 / 2;
+        @include transformation {
+          grid-column: 2 / 4;
+          grid-row: 2 / 3;
+        }
+      }
+      &:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 2;        
+        @include transformation {
+          grid-column: 1 span;
+          grid-row: 3 / 4;
+        }
+      }
+      &:nth-of-type(3) {
+        grid-column: 1 span;
+        grid-row: 2 / 3;
+        @include transformation {
+          grid-column: 3 / 4;
+          grid-row: 3 / 4;
+        }
+      }
+      &:nth-of-type(4) {
+        grid-area: 3 / 1 / 4 / span 1;
+        @include transformation {
+            grid-column: 1;
+            grid-row: 2;            
+        }
+      }
+      &:nth-of-type(5) {
+        @include transformation {
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+        }
+      }
+    }
+}
+
+.frame2__list__item-dashed {
+  content: " ";
+  border-bottom: 1px dashed #71787f;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 4px 5px;
+}
+
+.frame2__list__item-name {
+  letter-spacing: 0;
+  font-weight: normal;
+  @include opensans-regular;
+}
+.frame2__list__item {
+  display: flex;
+  margin-bottom: 7.5px;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,60 @@
+$red: #ee6956;
+$gray-light: #f1f2f2;
+$blue: #85b1f9;
+$yellow: #fff48e;
+$light-green: #c3f3e2;
+$cream: #d9eaff;
+$white: #fff;
+$dark: #212121;
+$gray-dark: #71787f;
+$light-black: #323C46;
+$light-red: #ffc1c1;
+
+
+.item {
+    @include initialMin {
+        @include opensans-regular;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 14px;
+        padding: 13px;
+        letter-spacing: -0.2px;
+        
+    }
+
+    @include transformation{
+        letter-spacing: -0.5px;
+    }
+}
+ 
+.light-red {
+    background-color: $light-red;
+}
+.blue {
+    background-color: $blue;
+}
+.gray-light {
+    background-color: $gray-light;
+}
+.gray-dark {
+    background-color: $gray-dark;
+    color: $white;
+}
+.yellow {
+    background-color: $yellow;
+}
+.red {
+    background-color: $red;
+}
+.cream {
+    background-color: $cream;
+}
+.light-green {
+    background-color: $light-green;
+}
+ 
+
+
+
+    
