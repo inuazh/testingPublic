@@ -42,7 +42,6 @@
             justify-content: flex-end;
     font-size: 14px;
     padding: 13px;
-    letter-spacing: -0.2px;
   }
 }
 .light-red {
@@ -407,12 +406,6 @@ button {
   }
 }
 
-@media (min-width: 0px) {
-  .letterSpaceGap {
-    letter-spacing: -0.5px;
-  }
-}
-
 .frame {
   padding-bottom: 10px;
 }
@@ -504,12 +497,6 @@ button {
 .frame__grid:nth-of-type(6) {
   max-width: 211px;
   max-height: 210px;
-}
-
-@media (min-width: 0px) {
-  .cashback {
-    letter-spacing: -0.5px;
-  }
 }
 
 .frame2-row {
@@ -761,7 +748,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 7.2px;
-  letter-spacing: 0.3px;
 }
 
 @media (min-width: 0px) {
