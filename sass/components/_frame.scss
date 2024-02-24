@@ -107,6 +107,13 @@
   }
   //dont move to frame
 
+.letterSpaceGap{
+  @include initialMin{
+    letter-spacing: -0.5px;
+  }
+ 
+}
+
 .frame{
     padding-bottom: 10px;
     &__grid {

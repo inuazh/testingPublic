@@ -45,12 +45,6 @@
     letter-spacing: -0.2px;
   }
 }
-@media (min-width: 480px) {
-  .item {
-    letter-spacing: -0.5px;
-  }
-}
-
 .light-red {
   background-color: #ffc1c1;
 }
@@ -413,6 +407,12 @@ button {
   }
 }
 
+@media (min-width: 0px) {
+  .letterSpaceGap {
+    letter-spacing: -0.5px;
+  }
+}
+
 .frame {
   padding-bottom: 10px;
 }
@@ -760,8 +760,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 7.5px;
-  letter-spacing: 1px;
+  margin-bottom: 7.2px;
+  letter-spacing: 0.3px;
 }
 
 @media (min-width: 0px) {
