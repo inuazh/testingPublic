@@ -301,19 +301,17 @@ button {
   font-weight: 400;
   font-size: 18.11px;
   line-height: 26.2px;
-  letter-spacing: -0.2px;
   margin-left: -19px;
 }
 @media (min-width: 0px) {
   .frame-row .frame__grid:nth-of-type(1) .frame__description {
     margin-top: 8px;
-    letter-spacing: -0.1px;
   }
 }
 @media (min-width: 480px) {
   .frame-row .frame__grid:nth-of-type(1) .frame__description {
     margin-top: 0;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.1px;
   }
 }
 @media (min-width: 0px) {

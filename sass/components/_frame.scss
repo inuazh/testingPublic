@@ -28,18 +28,18 @@
           .frame__description {
             @include initialMin {
               margin-top: 8px;
-              letter-spacing: -0.1px;
+              // letter-spacing: -0.1px;
             }
     
             @include transformation {
               margin-top: 0;
-              letter-spacing: -0.2px;
+              letter-spacing: -0.1px;
             }
     
             @include opensans-regular;
             font-size: 18.11px;
             line-height: 26.2px;
-            letter-spacing: -0.2px;
+            // letter-spacing: -0.2px;
             margin-left: -19px;
           }
           .frame__grid-wrap {
