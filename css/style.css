@@ -417,7 +417,7 @@ button {
   padding-bottom: 10px;
 }
 .frame__grid {
-  font-size: 12px;
+  font-size: 14px;
 }
 .frame__grid:nth-of-type(1) {
   -ms-grid-column-span: 1;
