@@ -7,7 +7,7 @@ let closeBtn = document.querySelector(".close");
 btn.onclick = function() {
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; 
-    document.body.style.paddingRight = "17px"; //fight owirflow difference
+    document.body.style.paddingRight = "17px"; //fight owrflow difference
 }
 
 closeBtn.onclick = function() {
