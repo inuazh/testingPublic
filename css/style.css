@@ -44,6 +44,12 @@
     padding: 13px;
   }
 }
+@media (min-width: 480px) {
+  .item {
+    padding: 15px;
+  }
+}
+
 .light-red {
   background-color: #ffc1c1;
 }
@@ -528,7 +534,7 @@ button {
   grid-row: 2;
   color: #fff;
   cursor: pointer;
-  background-image: url("../img/TimetoWash.png");
+  background-image: url("../../img/TimetoWash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -546,7 +552,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../img/TimetoWash.png");
+  background-image: url("../../img/TimetoWash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -7,8 +7,15 @@ let closeBtn = document.querySelector(".close");
 btn.onclick = function() {
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; 
-    document.body.style.paddingRight = "17px"; //fight owrflow difference
+    if (window.innerWidth > 900 && !isFirefox()) {
+        document.body.style.paddingRight = "17px";
+    }
 }
+
+function isFirefox() {
+    return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+}
+
 
 closeBtn.onclick = function() {
     modal.style.display = "none";
