@@ -534,7 +534,7 @@ button {
   grid-row: 2;
   color: #fff;
   cursor: pointer;
-  background-image: url("../../img/TimetoWash.jpg");
+  background-image: url("../img/TimetoWash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -552,7 +552,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("../../img/TimetoWash.jpg");
+  background-image: url("../img/TimetoWash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
