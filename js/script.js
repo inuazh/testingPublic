@@ -7,7 +7,7 @@ let closeBtn = document.querySelector(".close");
 btn.onclick = function() {
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; 
-    if (window.innerWidth > 800 && !isFirefox() && !isSafari() && isTouchDevice()) {
+    if (window.innerWidth > 900 && !isFirefox() && !isSafari() && !isTouchDevice()) {
         document.body.style.paddingRight = "17px";
     }
 }
@@ -18,12 +18,20 @@ function isFirefox() {
 
 function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-}// dont shure about that, cuz i dont have mac
+}
+// dont shure about that, cuz i dont have mac
 
 function isTouchDevice() {
     return 'ontouchstart' in document.documentElement;
-    console.log('touch')
 }
+
+function te1st (){
+ if (isTouchDevice){
+    console.log('touch')
+ }
+}
+
+
 
 
 
