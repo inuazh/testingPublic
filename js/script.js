@@ -7,7 +7,7 @@ let closeBtn = document.querySelector(".close");
 btn.onclick = function() {
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; 
-    if (window.innerWidth > 900 && !isFirefox()) {
+    if (window.innerWidth > 900 && !isFirefox() && !isSafari()) {
         document.body.style.paddingRight = "17px";
     }
 }
@@ -15,6 +15,11 @@ btn.onclick = function() {
 function isFirefox() {
     return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 }
+
+function isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
+// dont shure about that, cuz i dont have mac
 
 
 closeBtn.onclick = function() {
