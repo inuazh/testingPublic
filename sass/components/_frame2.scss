@@ -10,7 +10,7 @@
       grid-auto-rows: minmax(102px, 31.36vw);
       grid-gap: 10px;
     }
-
+ // нужно для того чтобы после 768px квадраты не равнялись на ширину экрана
     @include endSquareVW{
       grid-auto-rows: minmax(102px, 241px);
     }

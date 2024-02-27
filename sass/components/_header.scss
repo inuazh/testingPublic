@@ -16,7 +16,7 @@
       // margin-top: 5px;
     }
   }
-  @include stopHeader {
+  @include endSquareVW {
     margin: 0 12px 10px;
     width: auto;
     @include opensans-regular;

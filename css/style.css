@@ -237,7 +237,7 @@ button {
     font-size: 24px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 769px) {
   .header {
     margin: 0 12px 10px;
     width: auto;
@@ -783,7 +783,7 @@ button {
     font-size: 24px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 769px) {
   .footer {
     margin: 0px 12px;
     width: auto;

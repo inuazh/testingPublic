@@ -17,10 +17,12 @@
         }
     }
 
-    @include stopHeader{
+    
+    @include endSquareVW{
         margin: 0px 12px;
         width: auto;
     }
+    
 
     @include transformation{
         line-height: 20px;
