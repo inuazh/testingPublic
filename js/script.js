@@ -37,6 +37,8 @@ function te1st (){
 
 
 
+
+
 closeBtn.onclick = function() {
     modal.style.display = "none";
     document.body.style.overflow = "auto"; 
