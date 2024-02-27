@@ -10,6 +10,13 @@
   }
 }
 
+@mixin endSquareVW  {
+  @media (min-width: (769px)) {
+    @content;
+  }
+}
+
+
 @mixin initialMin  {
   @media (min-width: (0px)) {
     @content;

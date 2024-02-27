@@ -10,6 +10,10 @@
       grid-auto-rows: minmax(102px, 31.36vw);
       grid-gap: 10px;
     }
+
+    @include endSquareVW{
+      grid-auto-rows: minmax(102px, 241px);
+    }
     .frame2__grid:nth-of-type(1) {
         grid-column: 1;
         grid-row: 1;
